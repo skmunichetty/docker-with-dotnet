@@ -46,6 +46,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./CarvedRock.Api/Dockerfile
+          file: ./WebApp2/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/webapp2:2, ${{ secrets.DOCKERHUB_USERNAME }}/webapp2:${{ github.run_number }}
